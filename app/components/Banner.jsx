@@ -9,7 +9,7 @@ const Banner = () => {
     <>
       <section
         id="Banner"
-        className="relative h-auto md:h-[1712px] pt-8 md:pt-[126px] px-1 lg:px-0"
+        className="relative h-auto md:h-[1712px] pt-8 md:pt-[126px] px-4 lg:px-0"
       >
         <div className="container">
           <div className="flex flex-wrap-reverse md:flex-row md:justify-between gap-8 md:gap-0">
