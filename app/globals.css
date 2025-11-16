@@ -9,8 +9,15 @@
 
 @theme{
   --color-brandColor:#A53DFF;
+
+  --font-work:"Work Sans", sans-serif;
 }
 
 body{
     font-family: "Work Sans", sans-serif;
+}
+@layer {
+  .commonP{
+    @apply text-lg  font-normal text-[#132238]
+  }
 }
