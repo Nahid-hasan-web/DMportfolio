@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@utility container{
+  margin-inline:auto;
+  max-width:1320px ;
+}
+
+@theme{
+  --color-brandColor:#A53DFF;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
