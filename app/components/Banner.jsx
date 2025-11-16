@@ -3,6 +3,7 @@ import ButtonV1 from "../common-components/ButtonV1";
 import Counter from "../common-components/Counter";
 import Image from "next/image";
 import bannerImage from "../../public/images/banneImage.png";
+import AboutMe from "./AboutMe";
 const Banner = () => {
   return (
     <>
@@ -58,6 +59,7 @@ const Banner = () => {
         <div className="w-1 h-1  rounded-xl shadow-[0_0_250px_150px_rgba(218,77,241,0.40)] absolute top-0 right-0"></div>
         <div className="w-1 h-1 hidden lg:block  rounded-xl shadow-[0_0_250px_150px_rgba(196,245,233,0.70)] absolute top-[60%] right-40"></div>
         <div className="w-1 h-1 hidden lg:block  rounded-xl shadow-[0_0_250px_150px_rgba(255,223,168,0.80)] absolute top-[90%] left-0"></div>
+        <AboutMe/>
       </section>
     </>
   );
