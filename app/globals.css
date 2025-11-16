@@ -16,8 +16,3 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-@layer {
-  .commonP{
-    @apply text-lg  font-normal text-[#132238]
-  }
-}
