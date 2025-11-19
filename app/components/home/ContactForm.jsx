@@ -13,9 +13,9 @@ import { FaLinkedinIn } from "react-icons/fa6";
 const ContactForm = () => {
   return (
     <>
-      <section id="contact form">
+      <section id="contact form" className=" absolute w-full bottom-[90px]">
         <div className="container">
-          <div className="w-full p-[88px] rounded-[15px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-between">
+          <div className="w-full p-[88px] bg-white rounded-[15px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-between">
             {/* ------------ form text */}
             <div className="">
               <h2 className="text-[38px] font-semibold text-[#132238]">
@@ -118,7 +118,7 @@ const ContactForm = () => {
                 placeholder="Message*"
                 type="text"
               />
-              <button className="py-3.5 px-6 bg-brandColor text-base font-semibold text-white ">Submit<PiPaperPlaneRightLight/></button>
+              <button className="py-3.5 px-6 bg-brandColor text-base font-semibold text-white flex gap-2 items-center rounded-[5px] ">Submit<PiPaperPlaneRightLight/></button>
             </form>
           </div>
         </div>

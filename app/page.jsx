@@ -7,7 +7,7 @@ import Blog from './components/home/Blog'
 import Work from './components/home/Work'
 import Clients from './components/home/Clients'
 import Testimonial from './components/home/Testimonial'
-import ContactForm from './components/home/ContactForm'
+
 
 const page = () => {
   return (
@@ -20,7 +20,6 @@ const page = () => {
       <Work/>
       <Clients/>
       <Testimonial/>
-      <ContactForm/>
     </>
   )
 }
