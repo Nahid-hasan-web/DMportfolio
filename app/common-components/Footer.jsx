@@ -3,6 +3,24 @@ import React from 'react'
 import ContactForm from '../components/home/ContactForm'
 
 const Footer = () => {
+      const navbaritems = [
+    {
+      navbarContent: "Home",
+      navbarLink: "/",
+    },
+    {
+      navbarContent: "About Us",
+      navbarLink: "/",
+    },
+    {
+      navbarContent: "Blog",
+      navbarLink: "/",
+    },
+    {
+      navbarContent: "Terms and condition",
+      navbarLink: "/",
+    },
+  ];
   return (
     <>
         <footer id='Footer' className='bg-[#2B384C] pt-40 pb-[60px] mt-[700px] '>
@@ -12,9 +30,9 @@ const Footer = () => {
                     <Link href={'#'} className='text-3xl font-medium text-white'>Logo</Link>
                     <ul className='flex gap-5  items-center'>
                         {
-                            [1,2,3,4,5,6].map((item , i)=>(
+                            navbaritems.map((item , i)=>(
 
-                                <li key={i} className='text-base font-normal text-gray-50'>Home</li>
+                                <li key={i} className='text-base font-normal text-gray-50'><Link href={'#'}>{item.navbarContent}</Link></li>
                             ))
                         }
                     </ul>

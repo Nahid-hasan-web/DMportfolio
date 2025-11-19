@@ -11,15 +11,7 @@ const Navbar = () => {
       navbarLink: "/",
     },
     {
-      navbarContent: "About",
-      navbarLink: "/",
-    },
-    {
-      navbarContent: "Process",
-      navbarLink: "/",
-    },
-    {
-      navbarContent: "Portfolio",
+      navbarContent: "About Us",
       navbarLink: "/",
     },
     {
@@ -27,7 +19,7 @@ const Navbar = () => {
       navbarLink: "/",
     },
     {
-      navbarContent: "Services",
+      navbarContent: "Terms and condition",
       navbarLink: "/",
     },
   ];
