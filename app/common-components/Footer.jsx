@@ -14,7 +14,7 @@ const Footer = () => {
     <>
       <footer
         id="Footer"
-        className="bg-[#2B384C] pt-40 pb-[60px] mt-[900px] lg:mt-[650px] relative"
+        className="bg-[#2B384C] pt-40 pb-[60px]  lg:mt-[650px] relative"
       >
         <div className="container px-4">
           <div

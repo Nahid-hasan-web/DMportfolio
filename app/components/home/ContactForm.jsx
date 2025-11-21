@@ -11,7 +11,7 @@ import { PiPaperPlaneRightLight } from "react-icons/pi";
 const ContactForm = () => {
   return (
     <>
-      <section id="contact-form" className="absolute w-full bottom-[50px] md:bottom-[90px]">
+      <section id="contact-form" className=" lg:absolute w-full bottom-[50px] md:bottom-[90px]">
         <div className="container px-4">
           <div
             className="

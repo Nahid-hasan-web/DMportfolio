@@ -20,11 +20,7 @@ const Navbar = () => {
     },
 
   ];
-  const menuClasses = `text-base font-medium items-center md:flex md:gap-12 md:static md:flex-row md:w-auto ${
-    open
-      ? "flex flex-col gap-4 absolute left-0 top-full w-full bg-white p-4"
-      : "hidden"
-  }`;
+
 
   return (
     <>
@@ -75,7 +71,11 @@ const Navbar = () => {
               )}
             </button>
 
-            <ul className={menuClasses}>
+            <ul className={`text-base font-medium items-center md:flex z-30 md:gap-12 md:static md:flex-row md:w-auto ${
+    open
+      ? "flex flex-col gap-4 absolute left-0 top-full w-full bg-white p-4  "
+      : "hidden"
+  }`}>
               {navbaritems.map((item, i) => (
                 <li key={i} onClick={() => setOpen(false)}>
                   <Link href={item.navbarLink} className="text-[#333333] block">
