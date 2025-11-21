@@ -1,51 +1,83 @@
-import Link from 'next/link'
-import React from 'react'
-import ContactForm from '../components/home/ContactForm'
+import Link from "next/link";
+import React from "react";
+import ContactForm from "../components/home/ContactForm";
 
 const Footer = () => {
-      const navbaritems = [
-    {
-      navbarContent: "Site map",
-      navbarLink: "/",
-    },
-    {
-      navbarContent: "About Us",
-      navbarLink: "/",
-    },
-    {
-      navbarContent: "Blog",
-      navbarLink: "/",
-    },
-    {
-      navbarContent: "Terms and condition",
-      navbarLink: "/",
-    },
+  const navbaritems = [
+    { navbarContent: "Site map", navbarLink: "/" },
+    { navbarContent: "About Us", navbarLink: "/" },
+    { navbarContent: "Blog", navbarLink: "/" },
+    { navbarContent: "Terms and condition", navbarLink: "/" },
   ];
+
   return (
     <>
-        <footer id='Footer' className='bg-[#2B384C] pt-40 pb-[60px] mt-[700px] '>
-            <div className="container">
-                <div className="footer_row flex justify-between relative">
-                    <ContactForm/>
-                    <Link href={'#'} className='text-3xl font-medium text-white'>Logo</Link>
-                    <ul className='flex gap-5  items-center'>
-                        {
-                            navbaritems.map((item , i)=>(
+      <footer
+        id="Footer"
+        className="bg-[#2B384C] pt-40 pb-[60px] mt-[900px] lg:mt-[650px] relative"
+      >
+        <div className="container px-4">
+          <div
+            className="
+              footer_row
+              w-full
+              flex flex-col
+              lg:flex-row
+              lg:justify-between
+              lg:items-start
+              gap-10 lg:gap-0
+              relative
+            "
+          >
+            {/* Contact Form (absolute inside hero, but responsive) */}
+            <ContactForm />
 
-                                <li key={i} className='text-base font-normal text-gray-50'><Link href={'#'}>{item.navbarContent}</Link></li>
-                            ))
-                        }
-                    </ul>
-
-                    <p  className='text-base font-normal text-gray-50' >
-                        Copyright © 2022 Picto.
-                    </p>
-                
-                </div>
+            {/* Logo */}
+            <div className="mt-10 lg:mt-0">
+              <Link
+                href={"#"}
+                className="text-3xl font-medium text-white block text-center lg:text-left"
+              >
+                Logo
+              </Link>
             </div>
-        </footer>
-    </>
-  )
-}
 
-export default Footer
+            {/* Navigation Items */}
+            <ul
+              className="
+                flex 
+                flex-wrap 
+                gap-4 
+                lg:gap-6 
+                items-center 
+                justify-center 
+                lg:justify-start
+                mt-4 lg:mt-0
+              "
+            >
+              {navbaritems.map((item, i) => (
+                <li key={i} className="text-base text-gray-50">
+                  <Link href={item.navbarLink}>{item.navbarContent}</Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Copyright */}
+            <p
+              className="
+                text-base text-gray-50 
+                text-center 
+                mt-6 
+                lg:mt-0 
+              "
+            >
+              Copyright © 2022 Picto.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
