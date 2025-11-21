@@ -2,7 +2,8 @@ import React from "react";
 import ButtonV1 from "../common-components/ButtonV1";
 import Counter from "../common-components/Counter";
 import Image from "next/image";
-import bannerImage from "../../public/images/banneImage.png";
+import bannerImage from "../../public/images/profile.jpeg";
+
 import AboutMe from "./AboutMe";
 const Banner = () => {
   return (

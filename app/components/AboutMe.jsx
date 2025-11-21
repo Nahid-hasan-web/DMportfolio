@@ -7,6 +7,8 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import ButtonV1 from "../common-components/ButtonV1";
 import { GoDownload } from "react-icons/go";
 import { IoLogoYoutube } from "react-icons/io5";
+import bannerImage from "../../public/images/profile.jpeg";
+import Image from "next/image";
 
 const AboutMe = () => {
   const socialLiks = [
@@ -24,7 +26,8 @@ const AboutMe = () => {
         <div className="container">
           <div className="p-6 md:p-28 bg-white rounded-4 flex flex-col md:flex-row md:justify-between gap-6 md:gap-0 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.15)]">
             {/* --- about me images */}
-            <div className="w-full md:w-[424px] h-[300px] md:h-[468px] relative bg-gray-100 shrink-0">
+            <div className="w-full md:w-[424px] h-[300px] md:h-[468px] relative bg-gray-100 shrink-0 flex justify-center ">
+              <Image height={500} src={bannerImage} alt="prifile image" />
               <div className="absolute -bottom-9 left-1/2 transform -translate-x-1/2 w-full max-w-[264px] h-[72px] bg-white rounded-sm p-3 flex justify-between items-center shadow-[0px_8px_16px_-2px_rgba(0,0,0,0.1)]">
                 {socialLiks.map((item, i) => (
                   <Link
