@@ -5,7 +5,7 @@ import ContactForm from '../components/home/ContactForm'
 const Footer = () => {
       const navbaritems = [
     {
-      navbarContent: "Home",
+      navbarContent: "Site map",
       navbarLink: "/",
     },
     {

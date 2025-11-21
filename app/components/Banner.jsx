@@ -9,13 +9,13 @@ const Banner = () => {
     <>
       <section
         id="Banner"
-        className="relative h-auto md:h-[1712px] pt-8 md:pt-[126px] px-4 lg:px-0"
+        className="relative h-auto md:h-[1500px] pt-8 md:pt-[126px] px-4 lg:px-0"
       >
         <div className="container">
           <div className="flex flex-wrap-reverse md:flex-row md:justify-between gap-8 md:gap-0">
             <div className="banner_text w-full md:w-auto">
-              <h1 className="max-w-full md:max-w-[578px] text-4xl sm:text-5xl md:text-[72px] font-semibold text-[#132238] leading-tight">
-                Hello, I'm Brooklyn Gilbert
+              <h1 className="max-w-full md:max-w-[678px] text-4xl sm:text-5xl md:text-[72px] font-semibold text-[#132238] leading-tight">
+                Hello, I'm  <span className="text-brandColor block">Shimul Mozumder</span>
               </h1>
               <p className="commonp max-w-full md:max-w-[648px] my-4 md:my-6 text-sm sm:text-base">
                 I'm a Freelance{" "}

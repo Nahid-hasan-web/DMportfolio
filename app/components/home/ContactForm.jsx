@@ -3,8 +3,11 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
-import { IoBasketballOutline } from "react-icons/io5";
+import { IoBasketballOutline, IoLogoPinterest } from "react-icons/io5";
 import { PiPaperPlaneRightLight } from "react-icons/pi";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
+
 
 import { FaBehance } from "react-icons/fa";
 import { LuInstagram } from "react-icons/lu";
@@ -67,16 +70,19 @@ const ContactForm = () => {
                   <FaFacebookF className="text-xl" />
                 </div>
                 <div className="w-12 h-12 hover:bg-brandColor flex justify-center items-center text-brandColor duration-[.4s] hover:text-white rounded-sm">
-                  <IoBasketballOutline className="text-xl" />
+                  <FaXTwitter className="text-xl" />
                 </div>
                 <div className="w-12 h-12 hover:bg-brandColor flex justify-center items-center text-brandColor duration-[.4s] hover:text-white rounded-sm">
-                  <FaBehance className="text-xl" />
+                  <IoLogoYoutube className="text-xl" />
                 </div>
                 <div className="w-12 h-12 hover:bg-brandColor flex justify-center items-center text-brandColor duration-[.4s] hover:text-white rounded-sm">
                   <LuInstagram className="text-xl" />
                 </div>
                 <div className="w-12 h-12 hover:bg-brandColor flex justify-center items-center text-brandColor duration-[.4s] hover:text-white rounded-sm">
                   <FaLinkedinIn className="text-xl" />
+                </div>
+                <div className="w-12 h-12 hover:bg-brandColor flex justify-center items-center text-brandColor duration-[.4s] hover:text-white rounded-sm">
+                  <IoLogoPinterest className="text-xl" />
                 </div>
               </div>
             </div>
@@ -98,18 +104,18 @@ const ContactForm = () => {
               />
               <input
                 className="w-full border-b-3 border-gray-200 text-gray-500 focus-within:border-brandColor text-xl outline-none font-normal focus-within:placeholder:text-brandColor mb-6"
-                placeholder="Location*"
+                placeholder="Address*"
                 type="text"
               />
               <div className="flex gap-6">
                 <input
                   className="w-[200px] border-b-3 border-gray-200 text-gray-500 focus-within:border-brandColor text-xl outline-none font-normal focus-within:placeholder:text-brandColor mb-6"
-                  placeholder="Email*"
+                  placeholder="Phone"
                   type="text"
                 />
                 <input
                   className="w-[336px] border-b-3 border-gray-200 text-gray-500 focus-within:border-brandColor text-xl outline-none font-normal focus-within:placeholder:text-brandColor mb-6"
-                  placeholder="Location*"
+                  placeholder="City*"
                   type="text"
                 />
               </div>

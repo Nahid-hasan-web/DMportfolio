@@ -6,13 +6,14 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import ButtonV1 from "../common-components/ButtonV1";
 import { GoDownload } from "react-icons/go";
+import { IoLogoYoutube } from "react-icons/io5";
 
 const AboutMe = () => {
   const socialLiks = [
-    { socailLink: "/", socialIcon: <FaFacebookF /> },
-    { socailLink: "/", socialIcon: <FaBehance /> },
-    { socailLink: "/", socialIcon: <FaInstagram /> },
     { socailLink: "/", socialIcon: <FaLinkedinIn /> },
+    { socailLink: "/", socialIcon: <FaFacebookF /> },
+    { socailLink: "/", socialIcon: <IoLogoYoutube/> },
+    { socailLink: "/", socialIcon: <FaInstagram/> },
   ];
   return (
     <>

@@ -18,10 +18,7 @@ const Navbar = () => {
       navbarContent: "Blog",
       navbarLink: "/",
     },
-    {
-      navbarContent: "Terms and condition",
-      navbarLink: "/",
-    },
+
   ];
   const menuClasses = `text-base font-medium items-center md:flex md:gap-12 md:static md:flex-row md:w-auto ${
     open
