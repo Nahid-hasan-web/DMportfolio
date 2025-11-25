@@ -6,7 +6,7 @@ const Footer = () => {
   const navbaritems = [
     { navbarContent: "Site map", navbarLink: "/" },
     { navbarContent: "About Us", navbarLink: "/" },
-    { navbarContent: "Blog", navbarLink: "/" },
+    { navbarContent: "Blog", navbarLink: "/blog" },
     { navbarContent: "Terms and condition", navbarLink: "/" },
   ];
 
@@ -14,7 +14,7 @@ const Footer = () => {
     <>
       <footer
         id="Footer"
-        className="bg-[#2B384C] pt-40 pb-[60px]  lg:mt-[650px] relative"
+        className="bg-[#2B384C] pt-40 pb-[60px]   relative"
       >
         <div className="container px-4">
           <div
@@ -30,7 +30,7 @@ const Footer = () => {
             "
           >
             {/* Contact Form (absolute inside hero, but responsive) */}
-            <ContactForm />
+
 
             {/* Logo */}
             <div className="mt-10 lg:mt-0">

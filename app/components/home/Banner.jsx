@@ -1,10 +1,10 @@
 import React from "react";
-import ButtonV1 from "../common-components/ButtonV1";
-import Counter from "../common-components/Counter";
 import Image from "next/image";
-import bannerImage from "../../public/images/profile.jpeg";
+import bannerImage from "../../../public/images/profile.jpeg";
 
 import AboutMe from "./AboutMe";
+import ButtonV1 from "@/app/common-components/ButtonV1";
+import Counter from "@/app/common-components/Counter";
 const Banner = () => {
   return (
     <>
@@ -16,7 +16,8 @@ const Banner = () => {
           <div className="flex flex-wrap-reverse md:flex-row md:justify-between gap-8 md:gap-0">
             <div className="banner_text w-full md:w-auto">
               <h1 className="max-w-full md:max-w-[678px] text-4xl sm:text-5xl md:text-[72px] font-semibold text-[#132238] leading-tight">
-                Hello, I'm  <span className="text-brandColor block">Shimul Mozumder</span>
+                Hello, I'm{" "}
+                <span className="text-brandColor block">Shimul Mozumder</span>
               </h1>
               <p className="commonp max-w-full md:max-w-[648px] my-4 md:my-6 text-sm sm:text-base">
                 I'm a Freelance{" "}
@@ -60,7 +61,7 @@ const Banner = () => {
         <div className="w-1 h-1  rounded-xl shadow-[0_0_250px_150px_rgba(218,77,241,0.40)] absolute top-0 right-0"></div>
         <div className="w-1 h-1 hidden lg:block  rounded-xl shadow-[0_0_250px_150px_rgba(196,245,233,0.70)] absolute top-[60%] right-40"></div>
         <div className="w-1 h-1 hidden lg:block  rounded-xl shadow-[0_0_250px_150px_rgba(255,223,168,0.80)] absolute top-[90%] left-0"></div>
-        <AboutMe/>
+        <AboutMe />
       </section>
     </>
   );

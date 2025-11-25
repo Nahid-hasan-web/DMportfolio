@@ -3,6 +3,7 @@ import CommonHead from "@/app/common-components/CommonHead";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import ContactForm from "./ContactForm";
 
 const Testimonial = () => {
   var settings = {
@@ -16,7 +17,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <section id="Testimonial" className="py-12 md:py-20">
+      <section id="Testimonial" className="py-12 md:py-20 relative lg:mb-[650px]">
         <div className="container">
           <CommonHead
             headTitle={"Testimonial"}
@@ -61,6 +62,7 @@ const Testimonial = () => {
             ))}
           </Slider>
         </div>
+                    <ContactForm />
       </section>
     </>
   );

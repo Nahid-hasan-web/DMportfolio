@@ -16,7 +16,7 @@ const Navbar = () => {
     },
     {
       navbarContent: "Blog",
-      navbarLink: "/",
+      navbarLink: "/blog",
     },
 
   ];

@@ -1,13 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
-import { FaBehance } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import ButtonV1 from "../common-components/ButtonV1";
-import { GoDownload } from "react-icons/go";
 import { IoLogoYoutube } from "react-icons/io5";
-import bannerImage from "../../public/images/profile.jpeg";
+import ButtonV1 from "../../common-components/ButtonV1";
+import { GoDownload } from "react-icons/go";
+import bannerImage from "../../../public/images/profile.jpeg";
 import Image from "next/image";
 
 const AboutMe = () => {
