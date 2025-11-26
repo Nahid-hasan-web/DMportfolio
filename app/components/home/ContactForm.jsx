@@ -168,12 +168,13 @@ const ContactForm = () => {
                 className="w-full border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                 placeholder="Message*"
                 type="text"
-                onChange={(e)=>setForm((prev)=>({...prev , comment:e.target.value}))}
+                onChange={(e)=>setForm((prev)=>({...prev , message:e.target.value}))}
 
               />
 
               <button
                 className="
+                  active:scale-[1.1]
                   py-3.5 px-6 bg-brandColor text-base font-semibold text-white 
                   flex gap-2 items-center rounded-[5px] 
                 "
