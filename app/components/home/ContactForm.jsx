@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { MdOutlineLocationOn, MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
@@ -9,9 +10,25 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { PiPaperPlaneRightLight } from "react-icons/pi";
 
 const ContactForm = () => {
+  const [form, setForm] = useState({ name: "", email: "",address:"" , phone:"" , city:"", message: "" });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+    console.log(data);
+  };
   return (
     <>
-      <section id="contact-form" className=" lg:absolute w-full bottom-[50px] z-40 md:bottom-[-720px]">
+      <section
+        id="contact-form"
+        className=" lg:absolute w-full bottom-[50px] z-40 md:bottom-[-720px]"
+      >
         <div className="container px-4">
           <div
             className="
@@ -40,7 +57,9 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <p className="text-sm text-[#424E60]">Address:</p>
-                  <h2 className="text-base font-medium text-[#132238]">New Mexico 31134</h2>
+                  <h2 className="text-base font-medium text-[#132238]">
+                    New Mexico 31134
+                  </h2>
                 </div>
               </div>
 
@@ -51,7 +70,9 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <p className="text-sm text-[#424E60]">Email:</p>
-                  <h2 className="text-base font-medium text-[#132238]">your@gmail.com</h2>
+                  <h2 className="text-base font-medium text-[#132238]">
+                    your@gmail.com
+                  </h2>
                 </div>
               </div>
 
@@ -62,7 +83,9 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <p className="text-sm text-[#424E60]">Phone No:</p>
-                  <h2 className="text-base font-medium text-[#132238]">018541146516</h2>
+                  <h2 className="text-base font-medium text-[#132238]">
+                    018541146516
+                  </h2>
                 </div>
               </div>
 
@@ -95,7 +118,7 @@ const ContactForm = () => {
             </div>
 
             {/* ------------ Right Side Form */}
-            <form className="w-full lg:w-[50%]">
+            <form onSubmit={handleSubmit} className="w-full lg:w-[50%]">
               <p className="text-base md:text-lg text-[#87909D] mb-8 md:mb-[50px]">
                 There are many variations of passages of Lorem Ipsu available,
                 but the majority have suffered alte.
@@ -105,18 +128,23 @@ const ContactForm = () => {
                 className="w-full border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                 placeholder="Name*"
                 type="text"
+                onChange={(e)=>setForm((prev)=>({...prev , name:e.target.value}))}
               />
 
               <input
                 className="w-full border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                 placeholder="Email*"
                 type="email"
+                onChange={(e)=>setForm((prev)=>({...prev , email:e.target.value}))}
+
               />
 
               <input
-                className="w-full border-b-2 border-gray-200 text-gray-200 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
+                className="w-full border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                 placeholder="Address*"
                 type="text"
+                onChange={(e)=>setForm((prev)=>({...prev , address:e.target.value}))}
+
               />
 
               <div className="flex flex-col md:flex-row gap-6">
@@ -124,11 +152,15 @@ const ContactForm = () => {
                   className="w-full md:w-[45%] border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                   placeholder="Phone"
                   type="text"
+                onChange={(e)=>setForm((prev)=>({...prev , phone:e.target.value}))}
+
                 />
                 <input
                   className="w-full md:w-[50%] border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                   placeholder="City*"
                   type="text"
+                onChange={(e)=>setForm((prev)=>({...prev , city:e.target.value}))}
+
                 />
               </div>
 
@@ -136,6 +168,8 @@ const ContactForm = () => {
                 className="w-full border-b-2 border-gray-200 text-gray-500 focus:border-brandColor text-lg md:text-xl outline-none mb-6"
                 placeholder="Message*"
                 type="text"
+                onChange={(e)=>setForm((prev)=>({...prev , comment:e.target.value}))}
+
               />
 
               <button
