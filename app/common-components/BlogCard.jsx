@@ -7,9 +7,6 @@ const BlogCard = () => {
     <>
         <div className='w-[312px] rounded-lg overflow-hidden border border-[#F0F1F3]'>
             <div className='w-full h-[226px] bg-gray-200 relative overflow-hidden group'>
-
-
-
               <button className='w-full h-full absolute top-full group-hover:top-0 duration-[.4s] left-0 text-white  bg-[#0000007b] flex justify-center items-center text-xl font-medium font-poppins  gap-4  '>View Details <LuSquareArrowOutUpRight/></button>
             </div>
             <div className='p-5'>

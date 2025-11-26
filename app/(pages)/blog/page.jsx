@@ -7,9 +7,9 @@ const page = () => {
   return (
     <>
       <div className="container">
-        <div className="flex gap-10 ">
+        <div className="flex  gap-10 justify-between ">
           <MinicontactInfo />
-          <div className="flex flex-wrap gap-5 justify-end">
+          <div className="flex flex-1 flex-wrap gap-5 ">
             {[1, 2, 3, 4, 5, 6,7,9,10,11,12,13].map((item , i) => (
               <BlogCard key={i} />
             ))}

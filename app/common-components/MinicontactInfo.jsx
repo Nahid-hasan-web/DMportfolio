@@ -24,7 +24,7 @@ const MinicontactInfo = () => {
         {
           socialLiks.map((item , i)=>(
             
-            <a key={i} className={`p-2  flex justify-center items-center text-xl mt-5 rounded-sm  ${item.isActive?"text-white bg-brandColor" : "text-brandColor bg-[#F6EBFF]"}`} target='_blank' href={item.socailLink} >
+            <a key={i} className={`p-2  flex justify-center items-center text-xl mt-5 rounded-sm  ${item.isActive?"text-white! bg-brandColor!" : "text-brandColor! bg-[#F6EBFF]!"}`} target='_blank' href={item.socailLink} >
               {item.socialIcon}
             </a>
           ))
